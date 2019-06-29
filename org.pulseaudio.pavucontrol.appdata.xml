@@ -15,23 +15,23 @@
   <screenshots>
     <screenshot type="default">
       <caption>The “Playback” tab</caption>
-      <image type="source" width="1620" height="1160">https://freedesktop.org/software/pulseaudio/pavucontrol/screenshots/pavucontrol-playback.png</image>
+      <image type="source" width="1600" height="900">https://freedesktop.org/software/pulseaudio/pavucontrol/screenshots/pavucontrol-playback.png</image>
     </screenshot>
     <screenshot>
       <caption>The “Recording” tab</caption>
-      <image type="source" width="1620" height="1160">https://freedesktop.org/software/pulseaudio/pavucontrol/screenshots/pavucontrol-record.png</image>
+      <image type="source" width="1600" height="900">https://freedesktop.org/software/pulseaudio/pavucontrol/screenshots/pavucontrol-record.png</image>
     </screenshot>
     <screenshot>
       <caption>The “Output” tab</caption>
-      <image type="source" width="1620" height="1160">https://freedesktop.org/software/pulseaudio/pavucontrol/screenshots/pavucontrol-output.png</image>
+      <image type="source" width="1600" height="900">https://freedesktop.org/software/pulseaudio/pavucontrol/screenshots/pavucontrol-output.png</image>
     </screenshot>
     <screenshot>
       <caption>The “Input” tab</caption>
-      <image type="source" width="1620" height="1160">https://freedesktop.org/software/pulseaudio/pavucontrol/screenshots/pavucontrol-input.png</image>
+      <image type="source" width="1600" height="900">https://freedesktop.org/software/pulseaudio/pavucontrol/screenshots/pavucontrol-input.png</image>
     </screenshot>
     <screenshot>
       <caption>The “Configuration” tab</caption>
-      <image type="source" width="1620" height="1160">https://freedesktop.org/software/pulseaudio/pavucontrol/screenshots/pavucontrol-config.png</image>
+      <image type="source" width="1600" height="900">https://freedesktop.org/software/pulseaudio/pavucontrol/screenshots/pavucontrol-config.png</image>
     </screenshot>
   </screenshots>
   <releases>
