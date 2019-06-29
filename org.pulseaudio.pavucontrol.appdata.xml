@@ -17,19 +17,19 @@
       <caption>The “Playback” tab</caption>
       <image type="source" width="1620" height="1160">https://freedesktop.org/software/pulseaudio/pavucontrol/screenshots/pavucontrol-playback.png</image>
     </screenshot>
-    <screenshot type="default">
+    <screenshot>
       <caption>The “Recording” tab</caption>
       <image type="source" width="1620" height="1160">https://freedesktop.org/software/pulseaudio/pavucontrol/screenshots/pavucontrol-record.png</image>
     </screenshot>
-    <screenshot type="default">
+    <screenshot>
       <caption>The “Output” tab</caption>
       <image type="source" width="1620" height="1160">https://freedesktop.org/software/pulseaudio/pavucontrol/screenshots/pavucontrol-output.png</image>
     </screenshot>
-    <screenshot type="default">
+    <screenshot>
       <caption>The “Input” tab</caption>
       <image type="source" width="1620" height="1160">https://freedesktop.org/software/pulseaudio/pavucontrol/screenshots/pavucontrol-input.png</image>
     </screenshot>
-    <screenshot type="default">
+    <screenshot>
       <caption>The “Configuration” tab</caption>
       <image type="source" width="1620" height="1160">https://freedesktop.org/software/pulseaudio/pavucontrol/screenshots/pavucontrol-config.png</image>
     </screenshot>
