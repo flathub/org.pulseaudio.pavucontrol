@@ -33,9 +33,9 @@ modules:
 
   - name: libcanberra
     sources:
-      - sha256: c2b671e67e0c288a69fc33dc1b6f1b534d07882c2aceed37004bf48c601afa72
-        type: archive
-        url: http://0pointer.de/lennart/projects/libcanberra/libcanberra-0.30.tar.xz
+      - commit: c0620e432650e81062c1967cc669829dbd29b310
+        type: git
+        url: git://git.0pointer.net/libcanberra.git
     config-opts:
       # Without --disable-oss, configure prints a large warning about how
       # distributors should consider disabling this. Since we only need
