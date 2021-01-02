@@ -60,18 +60,30 @@ modules:
   # pavucontrol doesn't have an icon of its own; it normally uses
   # multimedia-volume-control from the system icon theme. However, Flatpak apps
   # need to supply their own icon. Ship Adwaita's one. It's renamed above.
+  # There is an freedesktop request to add imagemagick to the sdk
+  # https://gitlab.com/freedesktop-sdk/freedesktop-sdk/-/issues/1115
   - name: adwaita-icon-theme
     sources:
-      - type: archive
-        url: https://download.gnome.org/sources/adwaita-icon-theme/3.36/adwaita-icon-theme-3.36.0.tar.xz
-        sha256: 1a172112b6da482d3be3de6a0c1c1762886e61e12b4315ae1aae9b69da1ed518
       - type: file
-        path: multimedia-volume-control.svg
+        path: icons/multimedia-volume-control.svg
+      - type: file
+        path: icons/multimedia-volume-control-16.png
+      - type: file
+        path: icons/multimedia-volume-control-32.png
+      - type: file
+        path: icons/multimedia-volume-control-64.png
+      - type: file
+        path: icons/multimedia-volume-control-128.png
+      - type: file
+        path: icons/multimedia-volume-control-256.png
+      - type: file
+        path: icons/multimedia-volume-control-512.png
     buildsystem: simple
     build-commands:
-      - install -Dm 644 multimedia-volume-control.svg -t /app/share/icons/hicolor/scalable/apps/
+      - install -Dm 644 multimedia-volume-control.svg /app/share/icons/hicolor/scalable/apps/multimedia-volume-control.svg
       - |
-        for size in 16 22 24 32 48 256
+        for size in 16 32 64 128 256 512
         do
-          install -Dt /app/share/icons/hicolor/${size}x${size}/apps Adwaita/${size}x${size}/legacy/multimedia-volume-control.png
+          install -Dm 644 multimedia-volume-control-${size}.png /app/share/icons/hicolor/${size}x${size}/apps/multimedia-volume-control.png
         done
+
