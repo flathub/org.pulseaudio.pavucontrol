@@ -12,7 +12,6 @@ finish-args:
 rename-desktop-file: pavucontrol.desktop
 rename-icon: multimedia-volume-control
 cleanup:
-  - /bin/canberra-gtk-play
   - /include
   - /lib/*.a
   - /lib/*.la
@@ -20,7 +19,6 @@ cleanup:
   - /lib/debug
   - /lib/gnome-settings-daemon-3.0
   - /lib/gtk-3.0/modules/*.la
-  - /lib/libcanberra-0.30/*.la
   - /lib/pkgconfig
   - /share/doc
   - /share/gdm/autostart
@@ -32,20 +30,7 @@ cleanup:
 modules:
   - gtkmm.yaml
 
-  - name: libcanberra
-    sources:
-      - commit: c0620e432650e81062c1967cc669829dbd29b310
-        type: git
-        url: git://git.0pointer.net/libcanberra.git
-    config-opts:
-      # Without --disable-oss, configure prints a large warning about how
-      # distributors should consider disabling this. Since we only need
-      # libcanberra to talk to PulseAudio, we can disable all the other
-      # backends.
-      - --disable-alsa
-      - --disable-null
-      - --disable-oss
-
+  - shared-modules/libcanberra/libcanberra.json
   - shared-modules/intltool/intltool-0.51.json
 
   - name: pavucontrol
