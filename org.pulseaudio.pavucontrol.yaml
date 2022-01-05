@@ -45,7 +45,7 @@ modules:
       - --disable-alsa
       - --disable-null
       - --disable-oss
-      
+
   - shared-modules/intltool/intltool-0.51.json
 
   - name: pavucontrol
