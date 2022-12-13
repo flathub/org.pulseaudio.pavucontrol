@@ -13,7 +13,7 @@ rename-desktop-file: pavucontrol.desktop
 rename-icon: multimedia-volume-control
 
 modules:
-  - gtkmm.yaml
+  - gtkmm.json
 
   - shared-modules/libcanberra/libcanberra.json
   - shared-modules/intltool/intltool-0.51.json
