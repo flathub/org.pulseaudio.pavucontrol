@@ -11,21 +11,6 @@ finish-args:
   - --env=PULSE_PROP_media.category=Manager
 rename-desktop-file: pavucontrol.desktop
 rename-icon: multimedia-volume-control
-cleanup:
-  - /include
-  - /lib/*.a
-  - /lib/*.la
-  - /lib/*_generate_extra_defs-*.so*
-  - /lib/debug
-  - /lib/gnome-settings-daemon-3.0
-  - /lib/gtk-3.0/modules/*.la
-  - /lib/pkgconfig
-  - /share/doc
-  - /share/gdm/autostart
-  - /share/gnome
-  - /share/gtk-doc
-  - /share/man
-  - /share/vala
 
 modules:
   - gtkmm.yaml
@@ -47,6 +32,8 @@ modules:
         path: org.pulseaudio.pavucontrol.appdata.xml
     post-install:
       - install -D -t /app/share/metainfo/ org.pulseaudio.pavucontrol.appdata.xml
+    cleanup:
+      - /share/doc
 
   # pavucontrol doesn't have an icon of its own; it normally uses
   # multimedia-volume-control from the system icon theme. However, Flatpak apps
