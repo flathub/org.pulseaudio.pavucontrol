@@ -1,7 +1,7 @@
 app-id: org.pulseaudio.pavucontrol
 sdk: org.freedesktop.Sdk
 runtime: org.freedesktop.Platform
-runtime-version: '22.08'
+runtime-version: '23.08'
 command: pavucontrol
 finish-args:
   - --share=ipc
