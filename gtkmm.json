@@ -125,9 +125,9 @@
             "name": "pangomm",
             "sources": [
                 {
-                    "sha256": "410fe04d471a608f3f0273d3a17d840241d911ed0ff2c758a9859c66c6f24379",
+                    "sha256": "b92016661526424de4b9377f1512f59781f41fb16c9c0267d6133ba1cd68db22",
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/pangomm/2.46/pangomm-2.46.3.tar.xz",
+                    "url": "https://download.gnome.org/sources/pangomm/2.46/pangomm-2.46.4.tar.xz",
                     "x-checker-data": {
                         "type": "gnome",
                         "name": "pangomm",
@@ -149,9 +149,9 @@
             "name": "atkmm",
             "sources": [
                 {
-                    "sha256": "7c2088b486a909be8da2b18304e56c5f90884d1343c8da7367ea5cd3258b9969",
+                    "sha256": "0a142a8128f83c001efb8014ee463e9a766054ef84686af953135e04d28fdab3",
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/atkmm/2.28/atkmm-2.28.3.tar.xz",
+                    "url": "https://download.gnome.org/sources/atkmm/2.28/atkmm-2.28.4.tar.xz",
                     "x-checker-data": {
                         "type": "gnome",
                         "name": "atkmm",
