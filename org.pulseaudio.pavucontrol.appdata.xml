@@ -5,7 +5,7 @@
   <translation type="gettext">pavucontrol</translation>
   <launchable type="desktop-id">org.pulseaudio.pavucontrol.desktop</launchable>
   <name>Volume Control</name>
-  <summary>Adjust the volume level of hardware devices and applications</summary>
+  <summary>Adjust devices’ and apps’ volume</summary>
   <developer_name>The PulseAudio Developers</developer_name>
   <developer id="org.pulseaudio">
     <name>The PulseAudio Developers</name>
