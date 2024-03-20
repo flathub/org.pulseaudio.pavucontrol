@@ -29,9 +29,9 @@ modules:
           url-template: http://freedesktop.org/software/pulseaudio/pavucontrol/pavucontrol-$version.tar.xz
           is-main-source: true
       - type: file
-        path: org.pulseaudio.pavucontrol.appdata.xml
+        path: org.pulseaudio.pavucontrol.metainfo.xml
     post-install:
-      - install -D -t /app/share/metainfo/ org.pulseaudio.pavucontrol.appdata.xml
+      - install -D -t /app/share/metainfo/ org.pulseaudio.pavucontrol.metainfo.xml
     cleanup:
       - /share/doc
 
