@@ -1,7 +1,7 @@
 app-id: org.pulseaudio.pavucontrol
-sdk: org.freedesktop.Sdk
-runtime: org.freedesktop.Platform
-runtime-version: '23.08'
+runtime: org.gnome.Platform
+runtime-version: '46'
+sdk: org.gnome.Sdk
 command: pavucontrol
 finish-args:
   - --share=ipc
@@ -9,29 +9,21 @@ finish-args:
   - --socket=wayland
   - --socket=pulseaudio
   - --env=PULSE_PROP_media.category=Manager
-rename-desktop-file: pavucontrol.desktop
 rename-icon: multimedia-volume-control
 
 modules:
   - gtkmm.json
 
-  - shared-modules/libcanberra/libcanberra.json
   - shared-modules/intltool/intltool-0.51.json
 
   - name: pavucontrol
     sources:
-      - sha256: ce2b72c3b5f1a70ad0df19dd81750f9455bd20870d1d3a36d20536af2e8f4e7a
-        type: archive
-        url: http://freedesktop.org/software/pulseaudio/pavucontrol/pavucontrol-5.0.tar.xz
-        x-checker-data:
-          type: anitya
-          project-id: 8636
-          url-template: http://freedesktop.org/software/pulseaudio/pavucontrol/pavucontrol-$version.tar.xz
-          is-main-source: true
-      - type: file
-        path: org.pulseaudio.pavucontrol.metainfo.xml
-    post-install:
-      - install -D -t /app/share/metainfo/ org.pulseaudio.pavucontrol.metainfo.xml
+      - type: git
+        url: https://gitlab.freedesktop.org/pulseaudio/pavucontrol.git
+        commit: 7095051b25cb7b1b83de18c911c6662a20e3fc91
+    buildsystem: meson
+    config-opts:
+      - -Dlynx=false
     cleanup:
       - /share/doc
 
