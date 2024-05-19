@@ -20,7 +20,7 @@ modules:
     sources:
       - type: git
         url: https://gitlab.freedesktop.org/pulseaudio/pavucontrol.git
-        commit: 9635f1ed72b3604b820fa3c32ce770a7fce79926
+        commit: 41d578b7520c05e0753a28da74e222faafc6e393
     buildsystem: meson
     config-opts:
       - -Dlynx=false
