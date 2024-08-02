@@ -18,7 +18,7 @@ modules:
     sources:
       - type: git
         url: https://gitlab.freedesktop.org/pulseaudio/pavucontrol.git
-        tag: v6.0
+        tag: v6.1
     buildsystem: meson
     config-opts:
       - -Dlynx=false
