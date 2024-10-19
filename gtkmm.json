@@ -45,7 +45,8 @@
             ],
             "buildsystem": "meson",
             "config-opts": [
-                "-Dbuild-examples=false"
+                "-Dbuild-examples=false",
+                "-Dbuild-tests=false"
             ],
             "cleanup": [
                 "*.la",
