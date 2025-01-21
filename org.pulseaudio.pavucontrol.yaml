@@ -8,6 +8,7 @@ finish-args:
   - --socket=fallback-x11
   - --socket=wayland
   - --socket=pulseaudio
+  - --device=dri
   - --env=PULSE_PROP_media.category=Manager
 rename-icon: multimedia-volume-control
 
