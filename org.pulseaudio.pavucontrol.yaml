@@ -1,6 +1,6 @@
 app-id: org.pulseaudio.pavucontrol
 runtime: org.gnome.Platform
-runtime-version: '48'
+runtime-version: '49'
 sdk: org.gnome.Sdk
 command: pavucontrol
 finish-args:
@@ -57,4 +57,3 @@ modules:
         do
           install -Dm 644 multimedia-volume-control-${size}.png /app/share/icons/hicolor/${size}x${size}/apps/multimedia-volume-control.png
         done
-
