@@ -15,15 +15,13 @@ modules:
   - gtkmm.json
 
   - name: pavucontrol
-    sources:
-      - type: git
-        url: https://gitlab.freedesktop.org/pulseaudio/pavucontrol.git
-        tag: v6.2
-      - type: patch
-        path: screenshots.patch
     buildsystem: meson
     config-opts:
       - -Dlynx=disabled
     cleanup:
       - /share/doc
     sources:
+      - type: git
+        url: https://gitlab.freedesktop.org/pulseaudio/pavucontrol.git
+        tag: v6.2
+        commit: d43ef2b5e8aaa73382ed2990354c24648f097a74
