@@ -10,7 +10,6 @@ finish-args:
   - --socket=pulseaudio
   - --device=dri
   - --env=PULSE_PROP_media.category=Manager
-rename-icon: multimedia-volume-control
 
 modules:
   - gtkmm.json
@@ -27,34 +26,4 @@ modules:
       - -Dlynx=disabled
     cleanup:
       - /share/doc
-
-  # pavucontrol doesn't have an icon of its own; it normally uses
-  # multimedia-volume-control from the system icon theme. However, Flatpak apps
-  # need to supply their own icon. Ship Adwaita's one. It's renamed above.
-  # There is an freedesktop request to add imagemagick to the sdk
-  # https://gitlab.com/freedesktop-sdk/freedesktop-sdk/-/issues/1115
-  - name: adwaita-icon-theme
     sources:
-      - type: file
-        path: icons/multimedia-volume-control.svg
-      - type: file
-        path: icons/multimedia-volume-control-16.png
-      - type: file
-        path: icons/multimedia-volume-control-32.png
-      - type: file
-        path: icons/multimedia-volume-control-64.png
-      - type: file
-        path: icons/multimedia-volume-control-128.png
-      - type: file
-        path: icons/multimedia-volume-control-256.png
-      - type: file
-        path: icons/multimedia-volume-control-512.png
-    buildsystem: simple
-    build-commands:
-      - install -Dm 644 multimedia-volume-control.svg /app/share/icons/hicolor/scalable/apps/multimedia-volume-control.svg
-      - |
-        for size in 16 32 64 128 256 512
-        do
-          install -Dm 644 multimedia-volume-control-${size}.png /app/share/icons/hicolor/${size}x${size}/apps/multimedia-volume-control.png
-        done
-
