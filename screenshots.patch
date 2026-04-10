@@ -1,8 +1,8 @@
 diff --git a/src/org.pulseaudio.pavucontrol.metainfo.xml.in b/src/org.pulseaudio.pavucontrol.metainfo.xml.in
-index bd63f21..7e98aaa 100644
+index bd63f21..d4db41a 100644
 --- a/src/org.pulseaudio.pavucontrol.metainfo.xml.in
 +++ b/src/org.pulseaudio.pavucontrol.metainfo.xml.in
-@@ -19,23 +19,23 @@
+@@ -19,26 +19,39 @@
    <screenshots>
      <screenshot type="default">
        <caption>The “Playback” tab</caption>
@@ -31,3 +31,32 @@ index bd63f21..7e98aaa 100644
      </screenshot>
    </screenshots>
    <releases>
++
++    <release version="6.2" date="2025-09-17">
++      <description>
++        <ul>
++          <li>A number of translation updates.</li>
++          <li>Add a checkbox to disable unavailable profiles.</li>
++          <li>Avoid inhibiting monitor source suspend.</li>
++          <li>Fix peak decay when monitor is suspended.</li>
++          <li>Add a build option to disable audio feedback.</li>
++        </ul>
++      </description>
++    </release>
++
+     <release version="6.1" date="2024-08-01">
+       <description>
+         <ul>
+@@ -94,7 +107,8 @@
+   <content_rating type="oars-1.1"/>
+   <metadata_license>CC0-1.0</metadata_license>
+   <project_license>GPL-2.0+</project_license>
+-  <url type="homepage">https://freedesktop.org/software/pulseaudio/pavucontrol/</url>
++  <url type="homepage">https://www.freedesktop.org/software/pulseaudio/pavucontrol/</url>
+   <url type="bugtracker">https://gitlab.freedesktop.org/pulseaudio/pavucontrol/issues</url>
++  <url type="vcs-browser">https://gitlab.freedesktop.org/pulseaudio/pavucontrol</url>
+   <update_contact>https://gitlab.freedesktop.org/pulseaudio/pavucontrol/issues/new</update_contact>
+ </component>
+--
+libgit2 1.7.2
+
