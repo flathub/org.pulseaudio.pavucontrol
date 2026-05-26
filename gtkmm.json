@@ -141,8 +141,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/atkmm/2.36/atkmm-2.36.3.tar.xz",
-                    "sha256": "6ec264eaa0c4de0adb7202c600170bde9a7fbe4d466bfbe940eaf7faaa6c5974",
+                    "url": "https://download.gnome.org/sources/atkmm/2.36/atkmm-2.36.4.tar.xz",
+                    "sha256": "19cd0758ed752cb89f5bf02247663dfad0926d9351984a20e3c6cf7da62552ac",
                     "x-checker-data": {
                         "type": "gnome",
                         "name": "atkmm",
