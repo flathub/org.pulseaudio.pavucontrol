@@ -10,7 +10,13 @@ finish-args:
   - --socket=pulseaudio
   - --device=dri
   - --env=PULSE_PROP_media.category=Manager
-
+cleanup:
+  - /include
+  - /lib/pkgconfig
+  - /share/doc
+  - /share/man
+  - '*.la'
+  - '*.a'
 modules:
   - gtkmm.json
 
@@ -18,8 +24,6 @@ modules:
     buildsystem: meson
     config-opts:
       - -Dlynx=disabled
-    cleanup:
-      - /share/doc
     sources:
       - type: git
         url: https://gitlab.freedesktop.org/pulseaudio/pavucontrol.git
