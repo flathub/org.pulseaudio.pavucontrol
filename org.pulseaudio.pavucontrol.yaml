@@ -29,3 +29,7 @@ modules:
         url: https://gitlab.freedesktop.org/pulseaudio/pavucontrol.git
         tag: v6.2
         commit: d43ef2b5e8aaa73382ed2990354c24648f097a74
+        x-checker-data:
+          type: git
+          tag-pattern: ^v([\d.]+)$
+          is-main-source: true
